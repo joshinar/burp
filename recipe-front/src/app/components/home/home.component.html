@@ -1,0 +1,14 @@
+<div class="container" *ngIf="recipes">
+  <div class="row mt-5">
+    <div class="col-md-4 mx-auto" *ngFor="let recipe of recipes">
+      <a routerLink="recipe/{{ recipe._id }}">
+        <h5>{{ recipe.name }}</h5>
+        <img
+          src="{{ recipe.image }}"
+          alt=""
+          style="width:200px;height: auto;"
+        />
+      </a>
+    </div>
+  </div>
+</div>
