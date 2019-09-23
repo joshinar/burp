@@ -7,8 +7,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix recipe-front",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix recipe-front && npm run build --prefix recipe-front"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
